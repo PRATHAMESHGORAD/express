@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    welcome <%= username %>
+    <a href="/logout">logout</a>
+
+    <center>
+        <h2>book room <a href="/addRoom" >addRoom</a></h2>
+        <table border="3">
+            <tr>
+                <th>roomnumber</th>
+                <th>roomtype</th>
+                <th>pricepernight</th>
+                <th>capacity</th>
+                <th>actions</th>
+            </tr>
+            <% data.forEach(r => { %>
+             <tr>
+                <td><%= r.roomnumber %></td>
+                <td><%= r.roomtype %></td>
+                <td><%= r.pricepernight %></td>
+                <td><%= r.capacity %></td>
+
+                <td>
+                    <a href="/editform/<%= r._id %>">
+                        <button type="submit">update</button>
+                    </a>
+                    <form action="/deleteRoom/<%= r._id %>?_method=delete" method="post">
+                        <button type="submit">delete</button>
+                    </form>
+                </td>
+             </tr>
+            <% }) %>
+        </table>
+    </center>
+</body>
+</html>

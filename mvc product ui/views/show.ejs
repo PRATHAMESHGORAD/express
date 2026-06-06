@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>product details &nbsp; &nbsp; <a href="/addproduct">add product</a></h2>
+        <table border="3">
+            <tr>
+                <th>product name</th>
+                <th>product price</th>
+                <th>category</th>
+                <th>actions</th>
+            </tr>
+            <% data.forEach(p => { %>
+             <tr>
+                <td><%= p.pname %></td>
+                <td><%= p.pprice %></td>
+                <td><%= p.category %></td>
+                <td>
+                    <a href="/editproductform/<%= p._id %>"><button type="submit">update</button></a>
+                    <form action="/deleteproduct/<%= p._id %>?_method=delete" method="post" onsubmit="return confirm('are you sure')">
+                        <button type="submit">delete</button>
+                    </form>
+                </td>
+             </tr>
+            <% }) %>
+        </table>
+    </center>
+</body>
+</html>

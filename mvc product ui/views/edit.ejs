@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>update product details</h2>
+        <form action="/updateproduct/<%= data._id %>?_method=put" method="post">
+            product name:
+            <input type="text" name="pname" value="<%= data.pname %>"><br><br>
+            product price:
+            <input type="number" name="pprice" value="<%= data.pprice %>"><br><br>
+            category:
+            <input type="text" name="category" value="<%= data.category %>"><br><br>
+            <button type="submit">update</button>
+        </form>
+
+    </center>
+</body>
+</html>

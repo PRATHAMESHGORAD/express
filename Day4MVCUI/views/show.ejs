@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>EMPLOYEE DETAILS &nbsp; &nbsp;<a href="/addEmp">ADD EMP</a></h2>
+        <table border="3">
+            <tr>
+                <th>NAME</th>
+                <th>SALARY</th>
+                <th>DEPARTMENT</th>
+                <th>Actions</th>
+            </tr>
+            <% result.forEach(d => { %>
+                <tr>
+                    <td><%= d.name %></td>
+                    <td><%= d.salary %></td>
+                    <td><%= d.dept %></td>
+<form action="/delete/<%= d._id %>?_method=delete" method="post" onsubmit="return confirm('Are you sure?')">
+                  <button>Delete</button>
+                </form></td>
+                </tr>
+             
+            <% }) %>
+        </table>
+    </center>
+    
+</body>
+</html>

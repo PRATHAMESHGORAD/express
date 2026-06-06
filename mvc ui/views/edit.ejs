@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>update emp</h2>
+        <form action="/updateEmp/<%= data._id %>?_method=put" method="post">
+            NAME:
+            <input type="text" name="name" value="<%= data.name %>">
+            <br>
+            SALARY:
+            <input type="number" name="salary" value="<%= data.salary %>">
+            <br>
+            DEPARTMENT:
+            <input type="text" name="dept" value="<%= data.dept %>">
+            <br>
+            <button type="submit">update</button>
+        </form>
+    </center>
+</body>
+</html>
