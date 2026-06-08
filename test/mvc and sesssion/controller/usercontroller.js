@@ -1,7 +1,7 @@
 const rmodel = require('../model/rmodel');
 const umodel = require('../model/umodel');
 const bcryptjs = require('bcryptjs');
-const logger = require('../logger');
+const logger = require('../utils/logger');
 
 // Add Room Form
 const addform = (req, res) => {
