@@ -1,28 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <center>
-        <h2>add room</h2>
-        <form action="/addRoom" method="post">
-            roomnumber:
-            <input type="text" name="roomnumber" id="">
-            <br><br>
-            roomtype:
-            <input type="text" name="roomtype" id="">
-            <br><br>
-            pricepernight:
-            <input type="text" name="pricepernight" id="">
-            <br><br>
-            capacity:
-            <input type="text" name="capacity" id="">
-            <br><br>
-            <button type="submit">submit</button>
-        </form>
-    </center>
-</body>
-</html>
+<form
+ action="/addRoom"
+ method="post"
+ enctype="multipart/form-data"
+>
+
+    roomnumber:
+    <input type="text" name="roomnumber">
+    <br><br>
+
+    roomtype:
+    <input type="text" name="roomtype">
+    <br><br>
+
+    pricepernight:
+    <input type="text" name="pricepernight">
+    <br><br>
+
+    capacity:
+    <input type="text" name="capacity">
+    <br><br>
+
+    image:
+    <input
+        type="file"
+        name="image"
+    >
+    <br><br>
+
+    <button type="submit">
+        Submit
+    </button>
+
+</form>

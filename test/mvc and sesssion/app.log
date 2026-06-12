@@ -1,0 +1,17 @@
+error: Register Error: E11000 duplicate key error collection: mvcsessiontest.users index: name_1 dup key: { name: "harry" } {"timestamp":"2026-06-12T18:12:02.313Z"}
+error: Register Error: E11000 duplicate key error collection: mvcsessiontest.users index: name_1 dup key: { name: "harry" } {"timestamp":"2026-06-12T18:12:15.493Z"}
+info: New user registered: gorad {"timestamp":"2026-06-12T18:14:11.790Z"}
+info: gorad logged in successfully {"timestamp":"2026-06-12T18:14:17.706Z"}
+info: gorad viewed rooms {"timestamp":"2026-06-12T18:14:17.735Z"}
+info: Add room page opened {"timestamp":"2026-06-12T18:14:22.922Z"}
+info: Add room page opened {"timestamp":"2026-06-12T18:19:01.817Z"}
+info: Add room page opened {"timestamp":"2026-06-12T18:23:44.845Z"}
+error: Add Room Error: Cannot read properties of undefined (reading 'roomnumber') {"timestamp":"2026-06-12T18:24:05.072Z"}
+info: Add room page opened {"timestamp":"2026-06-12T18:25:48.097Z"}
+error: Add Room Error: Cannot read properties of undefined (reading 'roomnumber') {"timestamp":"2026-06-12T18:25:54.176Z"}
+info: Add room page opened {"timestamp":"2026-06-12T18:29:22.067Z"}
+info: Room 29 created {"timestamp":"2026-06-12T18:35:24.152Z"}
+warn: Unauthorized access to showRoom {"timestamp":"2026-06-12T18:35:24.172Z"}
+info: gorad logged in successfully {"timestamp":"2026-06-12T18:35:34.303Z"}
+info: gorad viewed rooms {"timestamp":"2026-06-12T18:35:34.322Z"}
+info: Add room page opened {"timestamp":"2026-06-12T18:35:38.637Z"}

@@ -1,7 +1,7 @@
 const express = require('express');
 
 const router = require('./route/userrouter')
-const {connectDB} = require('../config/db')
+const {connectDB} = require('./db')
 const methodOverride = require('method-override');
 const session = require('express-session');
 const morgan = require('morgan');

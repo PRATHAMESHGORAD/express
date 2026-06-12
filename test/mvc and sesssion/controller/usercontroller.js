@@ -7,6 +7,7 @@ const logger = require('../utils/logger');
 const addform = (req, res) => {
     logger.info("Add room page opened");
     res.render("add");
+    
 };
 
 // Show Rooms
@@ -42,6 +43,13 @@ const showRoom = async (req, res) => {
 
 // Add Room
 const addRoom = async (req, res) => {
+    console.log(req.body);
+    console.log(req.file);
+ 
+    
+    
+    
+    
 
     try {
 
@@ -49,7 +57,8 @@ const addRoom = async (req, res) => {
             roomnumber: req.body.roomnumber,
             roomtype: req.body.roomtype,
             pricepernight: req.body.pricepernight,
-            capacity: req.body.capacity
+            capacity: req.body.capacity,
+            image:req.file.filename
         });
 
         await data.save();

@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-const connectDB = ()=>{
+const connectDB = () =>{
     mongoose.connect("mongodb://localhost:27017/mvcsessiontest")
     .then(() => {
-        console.log("connected");
+       console.log("connected");
         
     }).catch((err) => {
         console.log(err);
